@@ -517,7 +517,7 @@ echo '[FORMAT]
 ' > .pylintrc
 
 pipenv run bash -c "python3 manage.py migrate"
-git init
+git init --initial-branch=main
 git remote add origin ${REPO_NAME}
 git branch -M main
 git add --all
